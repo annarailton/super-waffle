@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "super-waffle"
+authors = [{ name = "Anna Railton", email = "anna.railton@gmail.com" }]
+description = "Estimate vote share"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = ["Programming Language :: Python :: 3.9"]
+dependencies = [
+    "black[jupyter]==23.*",
+    "ipykernel",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+]
+dynamic = ["version"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]
